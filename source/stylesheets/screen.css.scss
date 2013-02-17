@@ -1,0 +1,173 @@
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+@import "compass/css3";
+@import "compass/reset";
+@import "foundation/settings";
+@import "foundation/functions/all";
+
+// Control which mixins you have access too
+
+@import "foundation/mixins/clearfix";
+// @import "foundation/mixins/css-triangle";
+// @import "foundation/mixins/font-size";
+
+// Must include next two for semantic grid to work
+
+@import "foundation/mixins/respond-to";
+@import "foundation/mixins/semantic-grid";
+
+// @import "modular-scale";
+// @import "foundation/common/globals";
+
+// Must include the grid for any responsiveness
+
+@import "foundation/components/grid";
+
+// Control which common styles get compiled
+
+// @import "foundation/common/typography";
+// @import "foundation/common/forms";
+
+// Control which components you get if customizing
+
+// @import "foundation/components/modules/buttons";
+// @import "foundation/components/modules/tabs";
+// @import "foundation/components/modules/ui";
+// @import "foundation/components/modules/topbar";
+// @import "foundation/components/modules/navbar";
+// @import "foundation/components/modules/orbit";
+// @import "foundation/components/modules/reveal";
+
+@import "ss-social";
+
+//  =============================================================================
+//  Variables
+//  =============================================================================
+
+    $red: #e86a69;
+    $black: #252525;
+    $white: #fff;
+
+    $tisa: "ff-tisa-web-pro", georgia, serif;
+    $open: "open-sans", 'helvetica neue', helvetica, arial, sans-serif;
+
+//  =============================================================================
+//  Base
+//  =============================================================================
+    * {
+      @include box-sizing(border-box);
+    }
+  
+    body {
+      padding-left: 370px;
+
+      // Typography
+      font-family: $tisa;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.5em;
+    }
+
+    a {
+      color: $black;
+      text-decoration: none;
+      @include transition(all 0.2s ease-in-out);
+      &:hover {
+        color: rgba($black, 0.7);
+      }
+    }
+
+    p {
+      a {
+        text-decoration: underline;
+      }
+    }
+
+//  =============================================================================
+//  Layout
+//  =============================================================================
+
+    #banner {
+      background: $red;
+      color: $white;
+      height: 100%;
+      max-width: 370px;
+      width: 100%;
+
+      position: fixed;
+      left: 0;
+      top: 0;
+      .information {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 45px;
+        h1 {
+          font-size: 1.45em;
+          margin: 0 0 15px;
+        }
+        .tagline {
+          color: rgba($white, 0.5);
+          font-size: 1em;
+          margin: 0 0 15px;
+        }
+      }
+    }
+
+    nav[role=navigation] {
+      border-bottom: 1px solid #eee;
+      font-family: $open;
+      font-size:  .9em;
+      padding: 45px 80px;
+      li {
+        display: inline-block;
+        padding-right: 20px;
+      }
+    }
+
+    #main {
+      padding: 80px;
+      max-width: 840px;
+    }
+
+//  =============================================================================
+//  Modules
+//  =============================================================================
+
+    // Post formatting
+
+    .post {
+      border-bottom: 1px solid #eee;
+      padding: 0 0 25px;
+      h2 {
+        font-size: 1.777777778em;
+        font-weight: 700;
+        margin: 0 0 10px;
+        a {
+          text-decoration: none;
+        }
+      }
+      date {
+        color: #CCC;
+        font-size: .888888889em;
+      }
+      p {
+        margin: 15px 0 0;
+      }
+    }
+
+    // Social Icons
+    .social {
+      li {
+        display: inline-block;
+        padding: 4px;
+        a {
+          color: rgba($white, 0.5);
+          font-size: 1.45em;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
