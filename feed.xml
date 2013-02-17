@@ -5,10 +5,24 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2012-01-01T00:00:00Z</updated>
+  <updated>2013-02-17T00:00:00Z</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>I'm a fake developer.</title>
+    <link rel="alternate" href="/notes/notes/2013/02/17/im-a-fake-developer.html"/>
+    <id>/notes/notes/2013/02/17/im-a-fake-developer.html</id>
+    <published>2013-02-17T00:00:00Z</published>
+    <updated>2013-02-17T00:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;
+
+&lt;p&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Example Article</title>
     <link rel="alternate" href="/notes/notes/2012/01/01/example-article.html"/>
